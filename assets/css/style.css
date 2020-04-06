@@ -101,9 +101,12 @@ img {
   background-color:#1e1e1e;
   border: 1px solid #323233;
   color: #dbdfe1;
-  margin-right: 8px;
   box-shadow: 3px 3px 4px #252526;
   transition: 0.7s;
+}
+
+.controls:not(:last-child) {
+  margin-right: 8px;
 }
 
 .controls:hover {
