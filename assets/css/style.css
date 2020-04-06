@@ -103,6 +103,7 @@ img {
   color: #dbdfe1;
   box-shadow: 3px 3px 4px #252526;
   transition: 0.7s;
+  outline: none;
 }
 
 .controls:not(:last-child) {
@@ -110,8 +111,9 @@ img {
 }
 
 .controls:hover {
-  outline: none;
   border-color: #dbdfe1;
+  box-shadow: inset 1px 1px 2px #dbdfe1, 6px 6px 8px #252526;
+  text-shadow: 2px 2px 5px #dbdfe1;
 }
 
 .indicators {
@@ -140,6 +142,13 @@ img {
   background-color: #1e1e1e;
   border-radius: 3px;
   transition: 0.7s;
+}
+
+.indicator:hover::before {
+  content: "";
+  opacity: 1;
+  background-color: #dbdfe1;
+  transform: scale(1.4);
 }
 
 .active::before {
