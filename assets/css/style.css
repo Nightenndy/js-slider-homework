@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+body {
+  background-color: #494949;
+}
+.header-text {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #dbdfe1;
+  text-shadow: 2px 2px 4px #1e1e1e;
+}
+
+.carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides {
+  position: relative;
+  height: 600px;
+  width: 480px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 3px 3px 4px #252526;
+}
+
+.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide {
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+}
+
+.slide:nth-of-type(1) {
+  background: black;
+}
+
+.slide:nth-of-type(2) {
+  background: black;
+}
+
+.slide:nth-of-type(3) {
+  background: black;
+}
+
+.slide:nth-of-type(4) {
+  background: black;
+}
+
+.slide:nth-of-type(5) {
+  background: black;
+}
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.sliderBtn {
+  display: none;
+  justify-content: center;
+  margin-top: -5px;
+}
+.controls {  
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  font-size: 1.1rem;
+  background-color:#1e1e1e;
+  border: 1px solid #323233;
+  color: #dbdfe1;
+  margin-right: 8px;
+  box-shadow: 3px 3px 4px #252526;
+  transition: 0.7s;
+}
+
+.controls:hover {
+  outline: none;
+  border-color: #dbdfe1;
+}
+
+.indicators {
+  display: none;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 25px;
+  height: 20px;
+  width: 60px;
+  padding: 0;
+  transition: 1s;
+}
+
+.indicator::before {
+  content: "";
+  height: 3px;
+  width: 60px;
+  opacity: 0.7;
+  background-color: #1e1e1e;
+  border-radius: 3px;
+  transition: 0.7s;
+}
+
+.active::before {
+  content: "";
+  opacity: 1;
+  background-color: #dbdfe1;
+  transform: scale(1.3);
+}

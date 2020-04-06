@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header-text">
+    <h1>Слайдер на чистом JavaScript</h1>
+  </header>
+  <div class="carousel">
+    <div class="slider-item">
+      <ul class="slides" id="slides">
+        <li class="slide active">
+          <img src="assets/img/1.png">
+        </li>
+        <li class="slide">
+          <img src="assets/img/2.png">
+        </li>
+        <li class="slide">
+          <img src="assets/img/3.jpg">
+        </li>
+        <li class="slide">
+          <img src="assets/img/4.jpg">
+        </li>
+        <li class="slide">
+          <img src="assets/img/5.jpg">
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="indicator-buttons">
+    <ol class="indicators">
+      <li class="indicator active" data-slide-to="0"></li>
+      <li class="indicator" data-slide-to="1"></li>
+      <li class="indicator" data-slide-to="2"></li>
+      <li class="indicator" data-slide-to="3"></li>
+      <li class="indicator" data-slide-to="4"></li>
+    </ol>
+  </div>
+  <div class="sliderBtn">
+    <button class="controls" id="previous">Previous</button>
+    <button class="controls" id="pause">Pause</button>
+    <button class="controls" id="next">Next</button>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
