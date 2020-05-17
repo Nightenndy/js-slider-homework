@@ -73,7 +73,8 @@
   let pressKey = (e) => {
     if (e.key === LEFT_ARROW) clickPrev();
     if (e.key === RIGHT_ARROW) clickNext();
-    if (e.key === SPACE) clickPause();
+    if (isPlaying === false && e.key === SPACE) play();
+    else clickPause();
   };
 
   let swipeStart = (e) => {

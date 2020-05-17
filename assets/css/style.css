@@ -113,7 +113,7 @@ img {
 .controls:hover {
   border-color: #dbdfe1;
   box-shadow: inset 1px 1px 2px #dbdfe1, 6px 6px 8px #252526;
-  text-shadow: 2px 2px 5px #dbdfe1;
+  text-shadow: 2px 2px 3px #dbdfe1;
 }
 
 .indicators {
