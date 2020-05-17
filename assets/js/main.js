@@ -91,7 +91,6 @@
     timerID = setInterval(gotoNextSlide, interval);
     sliderBtn.style.display = 'flex';
     indicatorsContainer.style.display = 'flex';
-
   }
 
   other();
